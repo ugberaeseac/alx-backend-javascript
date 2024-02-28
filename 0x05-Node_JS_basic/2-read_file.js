@@ -14,7 +14,9 @@ const countStudent = (path) => {
       subjects[student[3]].push(student[0]);
     }
     for (const subject in subjects) {
-      console.log(`Number of students in ${subject}: ${subjects[subject].length}. List: ${subjects[subject].join(', ')}`);
+      if (subject) {
+        console.log(`Number of students in ${subject}: ${subjects[subject].length}. List: ${subjects[subject].join(', ')}`);
+      }
     }
   } catch (error) {
     throw new Error('Cannot load the database');
@@ -22,4 +24,3 @@ const countStudent = (path) => {
 };
 
 module.exports = countStudent;
-
