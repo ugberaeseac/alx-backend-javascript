@@ -13,8 +13,7 @@ const countStudent = (path) => {
       }
       subjects[student[3]].push(student[0]);
     }
-    for (const subject of subjects) {
-      console.log(subject);
+    for (const subject in subjects) {
       console.log(`Number of students in ${subject} : ${subjects[subject].length}. List: ${subjects[subject].join(', ')}`);
     }
   } catch (err) {
