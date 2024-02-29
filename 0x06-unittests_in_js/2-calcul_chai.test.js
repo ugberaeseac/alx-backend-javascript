@@ -1,6 +1,4 @@
-
-
-const calculateNumber = require('./2-calcul.js');
+const calculateNumber = require('./2-calcul_chai.js');
 const chai = require('chai');
 const expect = chai.expect;
 
@@ -22,7 +20,7 @@ describe('test for calculateNumber - SUM', () => {
     expect(calculateNumber('SUM', -5.9, -6)).to.equal(-12);
   });
 
-  it('should check arguments',  () => {
+  it('should check arguments', () => {
     expect(calculateNumber('SUM', )).to.equal(NaN);
     expect(calculateNumber('SUM', 3)).to.equal(NaN);
   });
