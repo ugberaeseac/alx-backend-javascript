@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^5.1.0",
+    "chai": "^4.3.4",
     "mocha": "^10.3.0"
   }
 }

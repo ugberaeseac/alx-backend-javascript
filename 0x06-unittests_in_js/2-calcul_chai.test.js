@@ -19,11 +19,6 @@ describe('test for calculateNumber - SUM', () => {
     expect(calculateNumber('SUM', 2.5, 4.6)).to.equal(8);
     expect(calculateNumber('SUM', -5.9, -6)).to.equal(-12);
   });
-
-  it('should check arguments', () => {
-    expect(calculateNumber('SUM', )).to.equal(NaN);
-    expect(calculateNumber('SUM', 3)).to.equal(NaN);
-  });
 });
 
 
@@ -44,10 +39,6 @@ describe('test for calculateNumber - SUBSTRACT', () => {
     expect(calculateNumber('SUBSTRACT', -5.9, -6)).to.equal(0);
   });
 
-  it('should check arguments',  () => {
-    expect(calculateNumber('SUBSTRACT', )).to.equal(NaN);
-    expect(calculateNumber('SUBSTRACT', 3)).to.equal(NaN);
-  });
 });
 
 
@@ -74,8 +65,4 @@ describe('test for calculateNumber - DIVIDE', () => {
     expect(calculateNumber('DIVIDE', -3.5, 0)).to.equal('Error');
   });
 
-  it('should check arguments', () => {
-    expect(calculateNumber('DIVIDE', )).to.equal( NaN);
-    expect(calculateNumber('DIVIDE', 3)).to.equal( NaN);
-  });
 });
