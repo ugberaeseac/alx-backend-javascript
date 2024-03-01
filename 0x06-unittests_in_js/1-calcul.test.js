@@ -44,7 +44,7 @@ describe('test for calculateNumber - SUBTRACT', () => {
   });
 
   it('should check arguments',  () => {
-    assert.strictEqual(calculateNumber('SUSTRACT', ), NaN);
+    assert.strictEqual(calculateNumber('SUBTRACT', ), NaN);
     assert.strictEqual(calculateNumber('SUBTRACT', 3), NaN);
   });
 });
