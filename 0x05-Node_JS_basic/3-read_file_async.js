@@ -21,7 +21,7 @@ const countStudents = (path) => new Promise((resolve, reject) => {
           console.log(`Number of students in ${subject}: ${subjects[subject].length}. List: ${subjects[subject].join(', ')}`);
         }
       }
-      resolve();
+      resolve(subjects);
     }
   });
 });
