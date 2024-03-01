@@ -26,26 +26,26 @@ describe('test for calculateNumber - SUM', () => {
 });
 
 
-describe('test for calculateNumber - SUBSTRACT', () => {
+describe('test for calculateNumber - SUBTRACT', () => {
   it('should get the difference of integers', () => {
-    assert.strictEqual(calculateNumber('SUBSTRACT', 1, 1), 0);
-    assert.strictEqual(calculateNumber('SUBSTRACT', 1, 2), -1);
-    assert.strictEqual(calculateNumber('SUBSTRACT', 3, -2), 5);
-    assert.strictEqual(calculateNumber('SUBSTRACT', -9, 4), -13);
+    assert.strictEqual(calculateNumber('SUBTRACT', 1, 1), 0);
+    assert.strictEqual(calculateNumber('SUBTRACT', 1, 2), -1);
+    assert.strictEqual(calculateNumber('SUBTRACT', 3, -2), 5);
+    assert.strictEqual(calculateNumber('SUBTRACT', -9, 4), -13);
   });
 
   it('should round floats and calulate the difference', () => {
-    assert.strictEqual(calculateNumber('SUBSTRACT',1.2, 4.4), -3);
-    assert.strictEqual(calculateNumber('SUBSTRACT',4, 8.8), -5);
-    assert.strictEqual(calculateNumber('SUBSTRACT',-3.5, 5), -8);
-    assert.strictEqual(calculateNumber('SUBSTRACT', 1, 3.8), -3);
-    assert.strictEqual(calculateNumber('SUBSTRACT', 2.5, 4.6), -2);
-    assert.strictEqual(calculateNumber('SUBSTRACT', -5.9, -6), 0);
+    assert.strictEqual(calculateNumber('SUBTRACT',1.2, 4.4), -3);
+    assert.strictEqual(calculateNumber('SUBTRACT',4, 8.8), -5);
+    assert.strictEqual(calculateNumber('SUBTRACT',-3.5, 5), -8);
+    assert.strictEqual(calculateNumber('SUBTRACT', 1, 3.8), -3);
+    assert.strictEqual(calculateNumber('SUBTRACT', 2.5, 4.6), -2);
+    assert.strictEqual(calculateNumber('SUBTRACT', -5.9, -6), 0);
   });
 
   it('should check arguments',  () => {
-    assert.strictEqual(calculateNumber('SUBSTRACT', ), NaN);
-    assert.strictEqual(calculateNumber('SUBSTRACT', 3), NaN);
+    assert.strictEqual(calculateNumber('SUSTRACT', ), NaN);
+    assert.strictEqual(calculateNumber('SUBTRACT', 3), NaN);
   });
 });
 

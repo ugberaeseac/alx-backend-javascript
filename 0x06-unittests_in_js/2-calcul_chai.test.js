@@ -22,21 +22,21 @@ describe('test for calculateNumber - SUM', () => {
 });
 
 
-describe('test for calculateNumber - SUBSTRACT', () => {
+describe('test for calculateNumber - SUBTRACT', () => {
   it('should get the difference of integers', () => {
-    expect(calculateNumber('SUBSTRACT', 1, 1)).to.equal( 0);
-    expect(calculateNumber('SUBSTRACT', 1, 2)).to.equal( -1);
-    expect(calculateNumber('SUBSTRACT', 3, -2)).to.equal( 5);
-    expect(calculateNumber('SUBSTRACT', -9, 4)).to.equal( -13);
+    expect(calculateNumber('SUBTRACT', 1, 1)).to.equal( 0);
+    expect(calculateNumber('SUBTRACT', 1, 2)).to.equal( -1);
+    expect(calculateNumber('SUBTRACT', 3, -2)).to.equal( 5);
+    expect(calculateNumber('SUBTRACT', -9, 4)).to.equal( -13);
   });
 
   it('should round floats and calulate the difference', () => {
-    expect(calculateNumber('SUBSTRACT',1.2, 4.4)).to.equal( -3);
-    expect(calculateNumber('SUBSTRACT',4, 8.8)).to.equal(-5);
-    expect(calculateNumber('SUBSTRACT',-3.5, 5)).to.equal(-8);
-    expect(calculateNumber('SUBSTRACT', 1, 3.8)).to.equal(-3);
-    expect(calculateNumber('SUBSTRACT', 2.5, 4.6)).to.equal(-2);
-    expect(calculateNumber('SUBSTRACT', -5.9, -6)).to.equal(0);
+    expect(calculateNumber('SUBTRACT',1.2, 4.4)).to.equal( -3);
+    expect(calculateNumber('SUBTRACT',4, 8.8)).to.equal(-5);
+    expect(calculateNumber('SUBTRACT',-3.5, 5)).to.equal(-8);
+    expect(calculateNumber('SUBTRACT', 1, 3.8)).to.equal(-3);
+    expect(calculateNumber('SUBTRACT', 2.5, 4.6)).to.equal(-2);
+    expect(calculateNumber('SUBTRACT', -5.9, -6)).to.equal(0);
   });
 
 });
